@@ -54,7 +54,8 @@ sphinx-rtd-theme = "^1.0.0"
 sphinx-pyproject = "^0.1.0"
 
 [tool.flake8]
-extend-ignore = "E203, E741, W503, N806, N802, N803"
+max-line-length = 120
+extend-ignore = "E203, E741, W503, N806, N802, N803, N805"
 exclude = [".venv", ".git", "__pycache__",]
 max-complexity = 10
 
@@ -69,11 +70,11 @@ warn_unused_ignores = true
 warn_redundant_casts = true
 
 [tool.black]
-line-length = 79
+line-length = 120
 
 [tool.isort]
 profile = "black"
-line_length = 79
+line_length = 120
 
 [tool.sphinx-pyproject]
 project = "hierarchical-SVD"
